@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.dateapp" version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>DateApp</name>
+    <description>
+        A simple dating app built with Vue.js and wrapped with Cordova.
+    </description>
+    <author email="dev@example.com" href="https://example.com">
+        Date App
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+</widget>
