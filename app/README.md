@@ -1,6 +1,16 @@
 # app
 
-This template should help get you started developing with Vue 3 in Vite.
+This project demonstrates a simple dating app built with Vue 3 and wrapped
+with Apache Cordova so it can run as a mobile application.
+It includes a lightweight example of login, registration, profile display,
+swipe-style likes and simple messaging stored in local storage.
+
+## Features
+
+- Register and log in locally
+- View and edit a personal profile
+- Browse sample profiles with like/pass buttons
+- Basic messaging interface with liked profiles
 
 ## Recommended IDE Setup
 
@@ -26,4 +36,17 @@ npm run dev
 
 ```sh
 npm run build
+```
+
+### Build Cordova Wrapper
+
+After building the web assets, copy the contents of the `dist` folder into
+`cordova/www` and build your desired platform with Cordova:
+
+```sh
+npm run build
+cp -r dist/* cordova/www
+cd cordova
+cordova platform add android # or ios
+cordova build
 ```
