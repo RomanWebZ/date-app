@@ -1,11 +1,10 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="home">
+    <h1>Welcome to SecretHeaven</h1>
     <nav class="links">
       <RouterLink to="/login">Login</RouterLink>
       <RouterLink to="/register">Register</RouterLink>
@@ -17,6 +16,10 @@ import TheWelcome from '../components/TheWelcome.vue'
 </template>
 
 <style scoped>
+.home {
+  text-align: center;
+  padding-top: 2rem;
+}
 .links {
   display: flex;
   flex-direction: column;
