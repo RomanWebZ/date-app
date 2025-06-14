@@ -1,9 +1,10 @@
 # app
 
-This project demonstrates a simple dating app built with Vue 3 and wrapped
-with Apache Cordova so it can run as a mobile application.
-It includes a lightweight example of login, registration, profile display,
-swipe-style likes and simple messaging stored in local storage.
+SecretHeaven is a demo dating application built with Vue 3. The UI is tuned
+for small screens and can also run inside an Apache Cordova wrapper for mobile
+devices. A small Express server backed by SQLite is provided for development.
+
+The front end persists its state in local storage so it works offline as well.
 
 ## Features
 
@@ -11,6 +12,10 @@ swipe-style likes and simple messaging stored in local storage.
 - View and edit a personal profile
 - Browse sample profiles with like/pass buttons
 - Basic messaging interface with liked profiles
+- Multi‑step registration form
+- Example Express server using SQLite for storage
+- Swipe left or right to express interest
+- Simple chat interface with matched users
 
 ## Recommended IDE Setup
 
@@ -30,6 +35,12 @@ npm install
 
 ```sh
 npm run dev
+```
+
+### Start the development API server
+
+```sh
+npm run server
 ```
 
 ### Compile and Minify for Production
